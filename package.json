@@ -1,0 +1,19 @@
+{
+  "name": "Blog Template",
+  "version": "1.0",
+  "description": "Minimalist 11ty template",
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "start": "eleventy --serve"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "luxon": "^1.28.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "@11ty/eleventy-plugin-rss": "^1.1.1"
+  }
+}

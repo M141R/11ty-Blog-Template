@@ -1,0 +1,15 @@
+<div class="card">
+  <article class="snippet">
+    <img src="{{ post.data.img }}" alt="" />
+    <div class="data">
+      <time datetime="{{ post.date | htmlDateString }}">{{
+        post.data.date | readableDate
+      }}</time>
+      <h3>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      </h3>
+      <p>{{ post.data.description }}</p>
+      <a href="{{ post.url }}">Continue Reading <i class="fa-solid fa-circle-arrow-right"></i></a>
+    </div>
+  </article>
+</div>

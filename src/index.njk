@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+title: Home
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+<section class="hero">
+  <h1 class="title">Welcome to my blog</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quo
+    debitis. Quos soluta vero assumenda beatae quidem incidunt recusandae
+    deserunt?
+  </p>
+</section>
+<section class="featured">
+  <div class="posts">
+    <h3 class="page_title">Featured Posts</h3>
+    <svg
+      width="200"
+      height="17"
+      viewBox="0 0 304 17"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M152 14L151.287 16.3963C151.744 16.532 152.229 16.5346 152.687 16.4038L152 14ZM227.5 14L226.787 16.3963C227.244 16.532 227.729 16.5346 228.187 16.4038L227.5 14ZM76.5 14L75.7875 16.3963C76.2437 16.532 76.7291 16.5346 77.1867 16.4038L76.5 14ZM39.505 3L40.2175 0.603685C39.7613 0.468044 39.2759 0.465435 38.8183 0.596167L39.505 3ZM190.505 3L191.218 0.603685C190.761 0.468044 190.276 0.465435 189.818 0.596167L190.505 3ZM266.005 3L266.717 0.603685C266.261 0.468044 265.776 0.465435 265.318 0.596167L266.005 3ZM115.005 3L115.718 0.603685C115.261 0.468044 114.776 0.465435 114.318 0.596167L115.005 3ZM1.68672 16.4038L40.1917 5.40383L38.8183 0.596167L0.31328 11.5962L1.68672 16.4038ZM38.7925 5.39631L75.7875 16.3963L77.2125 11.6037L40.2175 0.603685L38.7925 5.39631ZM152.687 16.4038L191.192 5.40383L189.818 0.596167L151.313 11.5962L152.687 16.4038ZM189.792 5.39631L226.787 16.3963L228.213 11.6037L191.218 0.603685L189.792 5.39631ZM228.187 16.4038L266.692 5.40383L265.318 0.596167L226.813 11.5962L228.187 16.4038ZM265.292 5.39631L302.287 16.3963L303.713 11.6037L266.717 0.603685L265.292 5.39631ZM77.1867 16.4038L115.692 5.40383L114.318 0.596167L75.8133 11.5962L77.1867 16.4038ZM114.292 5.39631L151.287 16.3963L152.713 11.6037L115.718 0.603685L114.292 5.39631Z"
+        fill="#203656"
+      />
+    </svg>
+    <div class="card_list">
+      {% for post in collections.featured %} {% include 'postlist.njk' %} {%
+      endfor %}
+    </div>
+  </div>
+  <div class="sidebar">
+    {% include 'alltags.njk' %} {% include 'newsletter.njk' %}
+  </div>
+</section>
