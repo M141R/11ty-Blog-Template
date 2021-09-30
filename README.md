@@ -1,4 +1,4 @@
-# Minimalist Eleventy(11ty) Template
+# Eleventy(11ty) Blog Template
 
 ## Features
 - RSS Feed
