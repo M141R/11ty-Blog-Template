@@ -109,9 +109,6 @@ section {
 
 .logo {
   margin: 0;
-}
-
-.logo a {
   color: var(--clr1);
   font-weight: 700;
   font-size: 1.2rem;
@@ -338,6 +335,16 @@ footer {
   padding: 15px 30px;
 }
 
+footer p {
+  margin-bottom: 0;
+}
+
 .links {
   margin-left: auto;
+  display: flex;
+  gap: 5px;
+}
+
+.links svg:hover {
+  background: var(--clr4);
 }

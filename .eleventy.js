@@ -55,7 +55,6 @@ module.exports = function (eleventyConfig) {
 
     return filterTagList([...tagSet]);
   });
-
   return {
     dir: {
       input: "src",
