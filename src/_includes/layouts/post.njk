@@ -26,7 +26,7 @@ layout: layouts/base.njk
     getNextCollectionItem(page) %} {%- set previousPost = collections.posts |
     getPreviousCollectionItem(page) %} {%- if nextPost or previousPost %}
     <hr />
-    <ul>
+    <ul class="nextpost">
       {%- if nextPost %}
       <li>
         Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>

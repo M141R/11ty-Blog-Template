@@ -12,13 +12,13 @@
       fill="#203656"
     />
   </svg>
-  <ul>
+  <div class="tags">
     {% for tag in collections.tagList %} {% set tagUrl %}/tags/{{
       tag | slug
     }}/{% endset %}
-    <li>
+    <span>
       <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-    </li>
+    </span>
     {% endfor %}
-  </ul>
+  </div>
 </div>
