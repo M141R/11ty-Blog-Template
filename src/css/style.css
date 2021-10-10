@@ -78,7 +78,8 @@ a {
   color: var(--clr1);
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: var(--clr4);
 }
 
@@ -179,7 +180,8 @@ blockquote p {
   transition: 0.5s;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav a:focus {
   color: var(--clr1);
   font-weight: 500;
   --d: 100%;
@@ -230,7 +232,8 @@ blockquote p {
   border-radius: 10px;
 }
 
-.card:hover {
+.card:hover,
+.card:focus {
   transform: translateY(-2px);
 }
 
@@ -446,7 +449,8 @@ footer p {
   gap: 5px;
 }
 
-.links svg:hover {
+.links svg:hover,
+.links svg:focus {
   transform: translateY(-2px);
 }
 
