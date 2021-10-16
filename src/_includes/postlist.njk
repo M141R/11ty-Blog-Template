@@ -1,6 +1,11 @@
 <div class="card">
   <article class="snippet">
-    <img src="{{ post.data.img }}" alt="" />
+    <img
+      src="{{ post.data.img }}"
+      alt="{% if post.data.imgalt %}{{
+        post.data.imgalt
+      }}{% else %} Cover Image {% endif %}"
+    />
     <div class="data">
       <time datetime="{{ post.date | htmlDateString }}">{{
         post.data.date | readableDate

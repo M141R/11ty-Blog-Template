@@ -107,6 +107,10 @@ blockquote p {
   display: inline;
 }
 
+hr {
+  margin-top: 20px;
+}
+
 /* General Styles */
 
 .page_title {
@@ -463,4 +467,27 @@ footer p {
   .links {
     margin: 0;
   }
+}
+
+/* Pagination */
+
+.pagination {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 20rem;
+  margin: 1rem 0;
+  list-style: none;
+}
+
+.currentPage {
+  background: var(--clr1);
+  color: var(--clr3);
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.currentPage:hover {
+  color: var(--clr3);
 }
