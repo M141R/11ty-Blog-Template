@@ -18,8 +18,7 @@ layout: layouts/base.njk
       <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
       {%- endfor %}
     </div>
-
-    <img src="{{ image }}" alt="" />
+    
     {{ content | safe }}
 
     {%- if collections.posts %} {%- set nextPost = collections.posts |
