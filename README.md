@@ -12,7 +12,7 @@ Clone the repo
 ```sh
 git clone https://github.com/Mihir-27/11ty-Blog-Template.git
 ```
-Install all the dependencies
+Install all pacakages
 ```sh
 npm install
 ```
