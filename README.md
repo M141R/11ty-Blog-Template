@@ -10,7 +10,7 @@
 ## Installation
 Clone the repo
 ```sh
-git clone 
+git clone https://github.com/Mihir-27/11ty-Blog-Template.git
 ```
 Install all the dependencies
 ```sh
