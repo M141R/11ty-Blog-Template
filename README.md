@@ -9,8 +9,14 @@
 
 ## Installation
 Clone the repo
-``` git clone ```
+```sh
+git clone 
+```
 Install all the dependencies
-```npm install```
+```sh
+npm install
+```
 Run on localhost
-```npm run start```
+```sh
+npm run start
+```
